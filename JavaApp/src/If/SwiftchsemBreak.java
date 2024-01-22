@@ -17,8 +17,27 @@ public class SwiftchsemBreak {
 
 		case "amarela":
 			System.out.println("amarelo aprendiz");
-	//	default:
-		//	System.out.println("não sei nada");
+			break;
+		default:
+			System.out.println("não sei nada");
+
+		}
+		System.out.println("---------------------");
+		int idade=3;
+		switch (idade) {
+		case 3:
+			System.out.println("saber  falar e andar");
+			
+		case 2:
+			System.out.println("sabe so andar");
+			
+		case 1:
+			System.out.println("sabe engatinhar");
+			break;
+			default:
+				System.out.println("fim ");
+			
+		
 
 		}
 
