@@ -17,8 +17,8 @@ public class SwiftchsemBreak {
 
 		case "amarela":
 			System.out.println("amarelo aprendiz");
-		default:
-			System.out.println("não sei nada");
+	//	default:
+		//	System.out.println("não sei nada");
 
 		}
 
