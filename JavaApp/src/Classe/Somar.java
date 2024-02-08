@@ -9,9 +9,11 @@ public class Somar {
 	
 
 }
+  
 public static void main(String[] args) {
 	Somar ent=new Somar();
 
 	System.out.println(ent.a1(0, 0)) ;
+	
 }
 }
