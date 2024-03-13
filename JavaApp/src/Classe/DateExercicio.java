@@ -1,35 +1,42 @@
 package Classe;
 
 public class DateExercicio {
-int ano;
-int dia ;
-String  mes ;
-DateExercicio(){
-	dia=1;
-	mes="janeiro";
-	ano=1970;
-}
-DateExercicio(String nova){
-	dia=17;
-	mes="Abril";
-	ano=2024;
-}
- 
-DateExercicio(int diaInicial,String mesInicial,int anoInicail ){
-	dia=diaInicial;
-	mes=mesInicial;
-	ano=anoInicail;
-	
-}
-String obterDateFormatado() {
-	return String.format("%d/%s/%d \n",dia,mes,ano);
+	int ano;
+	int dia;
+	String mes;
 
-		
+	DateExercicio() {
+		/*
+		 * dia=1; mes="janeiro"; ano=1970;
+		 */
+	/*	this(13, "março", 2024);
+	;*/
+
 	}
+
+	DateExercicio(String matheus) {
+		dia = 17;
+		mes = "Abril";
+		ano = 2024;
+	}
+
+	DateExercicio(int dia, String mes, int ano) {
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
+
+	}
+
+	String obterDateFormatado() {
+		final String formato = "%d/%s/%d";
+		return String.format(formato, this.dia, mes, ano);
+
+	}
+
 //void imprimeformato () {
-	//System.out.printf("%d/,%s/,%d\n",dia,mes,ano);
-	void imprimeformato () {
+	// System.out.printf("%d/,%s/,%d\n",dia,mes,ano);
+	void imprimeformato() {
 		System.out.printf(obterDateFormatado());
-}
+	}
 
 }
